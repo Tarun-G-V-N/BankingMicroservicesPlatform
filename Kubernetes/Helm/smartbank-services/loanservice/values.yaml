@@ -1,0 +1,26 @@
+deploymentName: loanservice-deployment
+serviceName: loanservice
+appLabel: loanservice
+appName: loanservice
+
+replicaCount: 1
+
+image:
+  repository: smartbank/loanservice
+  tag: v1
+
+containerPort: 9000
+
+service:
+  type: ClusterIP
+  port: 9000
+  targetPort: 9000
+
+appname_enabled: true
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: false
+otel_enabled: true
+rabbitmq_enabled: true
+redis_enabled: false

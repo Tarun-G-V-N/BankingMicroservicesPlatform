@@ -1,0 +1,10 @@
+build:
+  version: "2.0"
+cards:
+  message: "Welcome to smartBank cards related Prod APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@prod.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-9876543210

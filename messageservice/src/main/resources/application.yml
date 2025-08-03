@@ -1,0 +1,63 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: "messageservice"
+  cloud:
+    function:
+      definition: emailForAccount|smsForAccount
+    stream:
+      bindings:
+        emailForAccount|smsForAccount-in-0:
+          destination: send-communication
+          group: ${spring.application.name}
+        emailForAccount|smsForAccount-out-0:
+          destination: communication-sent
+        emailForCard|smsForCard-in-0:
+          destination: send-communication
+          group: ${spring.application.name}
+        emailForCard|smsForCard-out-0:
+          destination: communication-sent
+        emailForLoan|smsForLoan-in-0:
+          destination: send-communication
+          group: ${spring.application.name}
+        emailForLoan|smsForLoan-out-0:
+          destination: communication-sent
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+    connection-timeout: 10s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: "*"
+        liveness:
+          include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+logging:
+  level:
+    com:
+      smartbank:
+        messageservice: DEBUG
+twilio:
+  account_sid: AC5de8cd9dc2bb1109bccc4d35523570f2
+  auth_token: c1caebf324ae2f1dd0351807e42a06ce
+  phone_number: 9515526240

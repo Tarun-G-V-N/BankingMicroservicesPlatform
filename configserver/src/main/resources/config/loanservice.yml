@@ -1,0 +1,10 @@
+build:
+  version: "3.2"
+loans:
+  message: "Welcome to smartBank loans related Local APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@dev.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-9876543210

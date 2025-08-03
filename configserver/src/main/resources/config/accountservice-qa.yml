@@ -1,0 +1,11 @@
+build:
+  version: "1.1"
+
+accounts:
+  message: "Welcome to smart bank accounts related QA APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@qa.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-9876543210

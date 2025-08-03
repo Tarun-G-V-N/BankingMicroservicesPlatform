@@ -1,0 +1,35 @@
+server:
+  port: 9000
+  address: 0.0.0.0
+spring:
+  application:
+    name: cardservice
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:cardservice
+    username: h2
+    password: h2password
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  config:
+    import:
+      - "cardservice-qa.yml"
+      - "cardservice-prod.yml"
+  profiles:
+    active: "qa"
+cards:
+  message: "Welcome to smart Bank cards related Local APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@dev.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-1234567891

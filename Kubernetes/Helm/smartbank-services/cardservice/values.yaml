@@ -1,0 +1,26 @@
+deploymentName: cardservice-deployment
+serviceName: cardservice
+appLabel: cardservice
+appName: cardservice
+
+replicaCount: 1
+
+image:
+  repository: smartbank/cardservice
+  tag: v1
+
+containerPort: 8090
+
+service:
+  type: ClusterIP
+  port: 8090
+  targetPort: 8090
+
+appname_enabled: true
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: false
+otel_enabled: true
+rabbitmq_enabled: true
+redis_enabled: false

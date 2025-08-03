@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to smart bank accounts related Prod APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@prod.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-9876543210

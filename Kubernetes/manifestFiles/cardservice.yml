@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cardservice-deployment
+  label:
+    app: cardservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cardservice
+  template:
+    metadata:
+      labels:
+        app: cardservice
+    spec:
+      containers:
+        - name: cardservice
+          image: smartbank/cardservice:v1
+          ports:
+            - containerPort: 8090
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cardservice
+spec:
+  selector:
+    app: cardservice
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8090
+      targetPort: 8090
+    
+      

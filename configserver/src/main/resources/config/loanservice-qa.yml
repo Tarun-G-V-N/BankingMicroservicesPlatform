@@ -1,0 +1,10 @@
+build:
+  version: "3.1"
+loans:
+  message: "Welcome to smart bank loans related QA APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@qa.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-9876543210

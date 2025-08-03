@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for messageservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="gatewayserver" />
+        <module name="eurekaserver" />
+        <module name="cardservice" />
+        <module name="loanservice" />
+        <module name="profileservice" />
+        <module name="common" />
+        <module name="configserver" />
+        <module name="customerservice" />
+        <module name="accountservice" />
+        <module name="messageservice" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="accountservice" options="" />
+      <module name="bom" options="" />
+      <module name="cardservice" options="" />
+      <module name="configserver" options="" />
+      <module name="customerservice" options="" />
+      <module name="eurekaserver" options="" />
+      <module name="gatewayserver" options="" />
+      <module name="loanservice" options="" />
+      <module name="messageservice" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+build:
+  version: "2.1"
+cards:
+  message: "Welcome to smart Bank cards related QA APIs"
+  contactDetails:
+    name: "Tarun"
+    email: "tarun@qa.com"
+  supportContacts:
+    - +91-1234567890
+    - +91-1234567891

@@ -1,0 +1,6 @@
+dependencies:
+- name: smartbank-commons
+  repository: file://../../smartbank-commons
+  version: 0.1.0
+digest: sha256:70bfc065594c6c61b059d8a6bd818c971c72632b47c54b2f1b24c2fff6538823
+generated: "2025-05-21T15:12:45.5265038+05:30"

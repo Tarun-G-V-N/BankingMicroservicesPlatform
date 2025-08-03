@@ -1,0 +1,27 @@
+dependencies:
+- name: smartbank-commons
+  repository: file://../../smartbank-commons
+  version: 0.1.0
+- name: configserver
+  repository: file://../../smartbank-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../smartbank-services/eurekaserver
+  version: 0.1.0
+- name: accountservice
+  repository: file://../../smartbank-services/accountservice
+  version: 0.1.0
+- name: cardservice
+  repository: file://../../smartbank-services/cardservice
+  version: 0.1.0
+- name: loanservice
+  repository: file://../../smartbank-services/loanservice
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../smartbank-services/gatewayserver
+  version: 0.1.0
+- name: messageservice
+  repository: file://../../smartbank-services/messageservice
+  version: 0.1.0
+digest: sha256:5e0a971285bca32b988450c4bccc82c2eddf2031ba619a3eaa4e7fc3d7aa682f
+generated: "2025-05-22T10:56:24.7180168+05:30"
