@@ -58,6 +58,6 @@ logging:
       smartbank:
         messageservice: DEBUG
 twilio:
-  account_sid: AC5de8cd9dc2bb1109bccc4d35523570f2
-  auth_token: c1caebf324ae2f1dd0351807e42a06ce
-  phone_number: 9515526240
+  account_sid:
+  auth_token:
+  phone_number: 
